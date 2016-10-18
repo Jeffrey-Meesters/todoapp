@@ -89,17 +89,19 @@
       <li class="todo">
         <input id="todo-1" type="checkbox" value="1" onChange="toggleDone.bind(this)();">
 
-        <label for="todo-1">Sweep the floor</label>
+        <label for="todo-1"> Don't sweep the floor</label>
       </li>
       <li class="todo completed">
         <input id="todo-2" type="checkbox" value="1" checked="checked" onChange="toggleDone.bind(this)();">
-        <label for="todo-2">Dust the vases</label>
+        <label for="todo-2">Don't dust the vases</label>
       </li>
     </ul>
     <div class="footer">
       Todo: <span id="todo-count">1</span> •
       Done: <span id="completed-count">0</span> •
       Total: <span id="total-count">1</span>
+      <!-- link to clean up todos that are done -->
+      <a href="#" onClick="cleanUpDoneTodos(); return false">Clean up</a>
     </div>
   </div>
 
